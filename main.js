@@ -12,3 +12,26 @@ if (typed) {
 }
    
 new PureCounter();
+
+new Swiper('.swiper', {
+   speed: 600,
+   loop: true,
+   autoPlay: {
+      delay: 4000,
+      disableOnInteraction: false
+   },
+   slidesPerView: 'auto',
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+   },
+   breakpoints: {
+      slidesPerView: 1,
+      spaceBetween: 20
+   },
+   1200: {
+      slidesPerView: 3,
+      spaceBetween: 20
+   }
+});
