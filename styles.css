@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap');
 
+
+
+
 #header {
   position: fixed;
   top: 0;
@@ -10,6 +13,7 @@
   background: #040b14;
   overflow-y: auto;
   z-index: 9997;
+  transition: all ease-in-out 0.5s;
 }
 @media (max-width: 1199px) {
   #header {
@@ -118,6 +122,12 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.4s;
+}
+.mobile-nav-active{
+  overflow: hidden;
+}
+.mobile-nav-active #header{
+  left: 0;
 }
 
 /* ///////////////////// */

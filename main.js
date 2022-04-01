@@ -1,4 +1,11 @@
-
+let nT = document.querySelector('.mobile-nav-toggle');
+let body = document.querySelector("body")
+nT.addEventListener("click", function () {
+  body.classList.toggle("mobile-nav-active")
+  this.classList.toggle("fa-bars")
+  this.classList.toggle("fa-xmark")
+  
+})
 const typed = document.querySelector('.typed');
 if (typed) {
   let typed_strings = typed.getAttribute('data-typed-items');
@@ -11,6 +18,7 @@ if (typed) {
     backDelay: 200,
   });
 }
+ AOS.init();
 
 new PureCounter();
 
