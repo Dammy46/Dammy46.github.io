@@ -1,3 +1,7 @@
+window.scroll({
+  behavior: 'smooth'
+});
+
 let nT = document.querySelector('.mobile-nav-toggle');
 let body = document.querySelector("body")
 nT.addEventListener("click", function () {
